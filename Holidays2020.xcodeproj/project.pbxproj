@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804A4D5727695F8600EC1347 /* SearchByDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A4D5627695F8600EC1347 /* SearchByDateViewController.swift */; };
 		80FB5F7127684AFA00897173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F7027684AFA00897173 /* AppDelegate.swift */; };
 		80FB5F7327684AFA00897173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F7227684AFA00897173 /* SceneDelegate.swift */; };
 		80FB5F7527684AFA00897173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F7427684AFA00897173 /* ViewController.swift */; };
 		80FB5F7827684AFA00897173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FB5F7627684AFA00897173 /* Main.storyboard */; };
 		80FB5F7A27684AFC00897173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FB5F7927684AFC00897173 /* Assets.xcassets */; };
 		80FB5F7D27684AFC00897173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FB5F7B27684AFC00897173 /* LaunchScreen.storyboard */; };
+		80FB5F8A2769453F00897173 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F892769453F00897173 /* SearchByNameViewController.swift */; };
+		80FB5F962769478500897173 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F952769478500897173 /* HomeViewController.swift */; };
+		80FB5F992769498A00897173 /* HolidayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F982769498A00897173 /* HolidayInfo.swift */; };
+		80FB5F9C2769541100897173 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB5F9B2769541100897173 /* Constants.swift */; };
+		9F6FA41422C9F300F68D44CC /* Pods_Holidays2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7137197D7CFEAD0993A7849F /* Pods_Holidays2020.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A22A025684C2A5D327751D1 /* Pods-Holidays2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holidays2020.debug.xcconfig"; path = "Target Support Files/Pods-Holidays2020/Pods-Holidays2020.debug.xcconfig"; sourceTree = "<group>"; };
+		7137197D7CFEAD0993A7849F /* Pods_Holidays2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holidays2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804A4D5627695F8600EC1347 /* SearchByDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByDateViewController.swift; sourceTree = "<group>"; };
 		80FB5F6D27684AFA00897173 /* Holidays2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holidays2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FB5F7027684AFA00897173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FB5F7227684AFA00897173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		80FB5F7927684AFC00897173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FB5F7C27684AFC00897173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80FB5F7E27684AFC00897173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FB5F892769453F00897173 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
+		80FB5F952769478500897173 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80FB5F982769498A00897173 /* HolidayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayInfo.swift; sourceTree = "<group>"; };
+		80FB5F9B2769541100897173 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E560B33F1139D9D1346C1F4F /* Pods-Holidays2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holidays2020.release.xcconfig"; path = "Target Support Files/Pods-Holidays2020/Pods-Holidays2020.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6FA41422C9F300F68D44CC /* Pods_Holidays2020.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240CAAC726D78F980A273377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A22A025684C2A5D327751D1 /* Pods-Holidays2020.debug.xcconfig */,
+				E560B33F1139D9D1346C1F4F /* Pods-Holidays2020.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		80FB5F6427684AFA00897173 = {
 			isa = PBXGroup;
 			children = (
 				80FB5F6F27684AFA00897173 /* Holidays2020 */,
 				80FB5F6E27684AFA00897173 /* Products */,
+				240CAAC726D78F980A273377 /* Pods */,
+				D20F7C20D2F3A0F51C0B9357 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,52 @@
 		80FB5F6F27684AFA00897173 /* Holidays2020 */ = {
 			isa = PBXGroup;
 			children = (
+				80FB5F87276944EE00897173 /* View */,
+				80FB5F86276944C300897173 /* Controller */,
+				80FB5F852769448800897173 /* Model */,
 				80FB5F7027684AFA00897173 /* AppDelegate.swift */,
 				80FB5F7227684AFA00897173 /* SceneDelegate.swift */,
-				80FB5F7427684AFA00897173 /* ViewController.swift */,
-				80FB5F7627684AFA00897173 /* Main.storyboard */,
 				80FB5F7927684AFC00897173 /* Assets.xcassets */,
 				80FB5F7B27684AFC00897173 /* LaunchScreen.storyboard */,
 				80FB5F7E27684AFC00897173 /* Info.plist */,
 			);
 			path = Holidays2020;
+			sourceTree = "<group>";
+		};
+		80FB5F852769448800897173 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80FB5F982769498A00897173 /* HolidayInfo.swift */,
+				80FB5F9B2769541100897173 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80FB5F86276944C300897173 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80FB5F7427684AFA00897173 /* ViewController.swift */,
+				80FB5F892769453F00897173 /* SearchByNameViewController.swift */,
+				80FB5F952769478500897173 /* HomeViewController.swift */,
+				804A4D5627695F8600EC1347 /* SearchByDateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80FB5F87276944EE00897173 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80FB5F7627684AFA00897173 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D20F7C20D2F3A0F51C0B9357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7137197D7CFEAD0993A7849F /* Pods_Holidays2020.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80FB5F8127684AFC00897173 /* Build configuration list for PBXNativeTarget "Holidays2020" */;
 			buildPhases = (
+				1EEDBA01BAD1B5DEEFBBC16A /* [CP] Check Pods Manifest.lock */,
 				80FB5F6927684AFA00897173 /* Sources */,
 				80FB5F6A27684AFA00897173 /* Frameworks */,
 				80FB5F6B27684AFA00897173 /* Resources */,
+				44FF566501135E4BA864350F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +197,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EEDBA01BAD1B5DEEFBBC16A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Holidays2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44FF566501135E4BA864350F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holidays2020/Pods-Holidays2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holidays2020/Pods-Holidays2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Holidays2020/Pods-Holidays2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80FB5F6927684AFA00897173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FB5F962769478500897173 /* HomeViewController.swift in Sources */,
+				80FB5F8A2769453F00897173 /* SearchByNameViewController.swift in Sources */,
+				804A4D5727695F8600EC1347 /* SearchByDateViewController.swift in Sources */,
+				80FB5F992769498A00897173 /* HolidayInfo.swift in Sources */,
 				80FB5F7527684AFA00897173 /* ViewController.swift in Sources */,
+				80FB5F9C2769541100897173 /* Constants.swift in Sources */,
 				80FB5F7127684AFA00897173 /* AppDelegate.swift in Sources */,
 				80FB5F7327684AFA00897173 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +395,7 @@
 		};
 		80FB5F8227684AFC00897173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A22A025684C2A5D327751D1 /* Pods-Holidays2020.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +414,7 @@
 		};
 		80FB5F8327684AFC00897173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E560B33F1139D9D1346C1F4F /* Pods-Holidays2020.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

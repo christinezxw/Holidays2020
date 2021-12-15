@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kEv-xN-FMI">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="cIo-Ar-Tup">
+            <objects>
+                <viewController id="CYk-RK-5fO" customClass="HomeViewController" customModule="Holidays2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZa-tX-lO6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to delete holiday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daN-Ou-lc9">
+                                <rect key="frame" x="49" y="313.66666666666669" width="798" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your saved 2020 holidays" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfP-63-czi">
+                                <rect key="frame" x="49" y="5" width="798" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1I4-GA-4wK">
+                                <rect key="frame" x="49" y="30.333333333333343" width="798" height="278.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="JcD-J0-z2U">
+                                        <rect key="frame" x="0.0" y="28" width="798" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JcD-J0-z2U" id="SHH-ah-Zeg">
+                                            <rect key="frame" x="0.0" y="0.0" width="798" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="0.21806227992957747" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CYk-RK-5fO" id="PlP-t4-c3c"/>
+                                    <outlet property="delegate" destination="CYk-RK-5fO" id="leg-UF-5dI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TVW-Qx-1S7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="daN-Ou-lc9" firstAttribute="top" secondItem="1I4-GA-4wK" secondAttribute="bottom" constant="5" id="JdS-bv-94g"/>
+                            <constraint firstItem="tfP-63-czi" firstAttribute="top" secondItem="TVW-Qx-1S7" secondAttribute="top" constant="5" id="MOf-Xh-Hvv"/>
+                            <constraint firstItem="1I4-GA-4wK" firstAttribute="leading" secondItem="TVW-Qx-1S7" secondAttribute="leading" constant="5" id="U6V-lq-FiV"/>
+                            <constraint firstItem="TVW-Qx-1S7" firstAttribute="bottom" secondItem="daN-Ou-lc9" secondAttribute="bottom" constant="10" id="cVg-k0-cR1"/>
+                            <constraint firstItem="TVW-Qx-1S7" firstAttribute="trailing" secondItem="daN-Ou-lc9" secondAttribute="trailing" constant="5" id="dZr-0U-0wj"/>
+                            <constraint firstItem="1I4-GA-4wK" firstAttribute="top" secondItem="tfP-63-czi" secondAttribute="bottom" constant="5" id="eJt-uQ-jPM"/>
+                            <constraint firstItem="tfP-63-czi" firstAttribute="leading" secondItem="TVW-Qx-1S7" secondAttribute="leading" constant="5" id="f8T-O2-6r0"/>
+                            <constraint firstItem="TVW-Qx-1S7" firstAttribute="trailing" secondItem="tfP-63-czi" secondAttribute="trailing" constant="5" id="k2Z-6J-n1W"/>
+                            <constraint firstItem="daN-Ou-lc9" firstAttribute="leading" secondItem="TVW-Qx-1S7" secondAttribute="leading" constant="5" id="wWV-IO-Pum"/>
+                            <constraint firstItem="TVW-Qx-1S7" firstAttribute="trailing" secondItem="1I4-GA-4wK" secondAttribute="trailing" constant="5" id="zbi-zs-VkS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="mv4-cd-4JU">
+                        <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="person" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblView" destination="1I4-GA-4wK" id="jzJ-dm-z8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSF-ix-XAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="621.42857142857144"/>
+        </scene>
+        <!--Search By Name-->
+        <scene sceneID="y6I-Xl-NYm">
+            <objects>
+                <viewController id="xue-Gd-M78" customClass="SearchByNameViewController" customModule="Holidays2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M1w-OJ-hNH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0kd-SA-vqZ">
+                                <rect key="frame" x="5" y="49" width="404" height="754"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Type a holiday's name" translatesAutoresizingMaskIntoConstraints="NO" id="igT-XR-Hwf">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="481"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="xue-Gd-M78" id="Tfu-uP-Q5M"/>
+                                        </connections>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J1O-C4-QKl">
+                                        <rect key="frame" x="0.0" y="481.00000000000006" width="404" height="252.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ZdC-UM-ImF">
+                                                <rect key="frame" x="0.0" y="28" width="404" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZdC-UM-ImF" id="E3O-qF-55w">
+                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.90321666" green="0.65184748169999995" blue="0.28224292400000001" alpha="0.22257372359154928" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="xue-Gd-M78" id="QGs-L2-xGZ"/>
+                                            <outlet property="delegate" destination="xue-Gd-M78" id="z43-7b-jxT"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to save holiday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji1-s5-eIc">
+                                        <rect key="frame" x="0.0" y="733.66666666666663" width="404" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9f6-nh-rIv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0kd-SA-vqZ" firstAttribute="top" secondItem="9f6-nh-rIv" secondAttribute="top" constant="5" id="AED-Sq-aTv"/>
+                            <constraint firstItem="9f6-nh-rIv" firstAttribute="bottom" secondItem="0kd-SA-vqZ" secondAttribute="bottom" constant="10" id="DY0-zq-JLZ"/>
+                            <constraint firstItem="0kd-SA-vqZ" firstAttribute="leading" secondItem="9f6-nh-rIv" secondAttribute="leading" constant="5" id="GYS-Q2-ovT"/>
+                            <constraint firstItem="9f6-nh-rIv" firstAttribute="trailing" secondItem="0kd-SA-vqZ" secondAttribute="trailing" constant="5" id="MKz-ef-xOU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search By Name" selectedImage="magnifyingglass" catalog="system" id="Hif-y9-4A3">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblView" destination="J1O-C4-QKl" id="B9y-hd-gLs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyd-T2-F9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="182.8125"/>
+        </scene>
+        <!--Search By Date-->
+        <scene sceneID="KaB-LM-uB5">
+            <objects>
+                <viewController id="QML-VT-dwU" customClass="SearchByDateViewController" customModule="Holidays2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TW7-3v-Z7c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gvr-W4-35x">
+                                <rect key="frame" x="5" y="5" width="404" height="798"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeR-jQ-dow">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="599606511.15248299">
+                                            <!--2020-01-01 21:21:51 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="599569200">
+                                            <!--2020-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="631105200">
+                                            <!--2020-12-31 11:00:00 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="en_US"/>
+                                        <connections>
+                                            <action selector="dataPickerChanged:" destination="QML-VT-dwU" eventType="valueChanged" id="q2B-zV-VDq"/>
+                                        </connections>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a date and we'll browse holidays:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uny-wz-tac">
+                                        <rect key="frame" x="0.0" y="216" width="404" height="20.333333333333343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zIY-CC-747">
+                                        <rect key="frame" x="0.0" y="236.33333333333331" width="404" height="541.33333333333348"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="w3e-Yq-CFp">
+                                                <rect key="frame" x="0.0" y="28" width="404" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w3e-Yq-CFp" id="huM-EO-gL9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="404" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.90321666" green="0.65184748169999995" blue="0.28224292400000001" alpha="0.2225737236" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="QML-VT-dwU" id="WSc-XS-XLm"/>
+                                            <outlet property="delegate" destination="QML-VT-dwU" id="JYu-Rk-83k"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to save holiday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq8-OA-AYs">
+                                        <rect key="frame" x="0.0" y="777.66666666666663" width="404" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.92686289550000001" green="0.40480428930000001" blue="0.38429176809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EVK-Ad-XtU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gvr-W4-35x" firstAttribute="leading" secondItem="EVK-Ad-XtU" secondAttribute="leading" constant="5" id="LN5-C5-M3u"/>
+                            <constraint firstAttribute="trailing" secondItem="Gvr-W4-35x" secondAttribute="trailing" constant="5" id="N5k-FO-xgg"/>
+                            <constraint firstItem="EVK-Ad-XtU" firstAttribute="bottom" secondItem="Gvr-W4-35x" secondAttribute="bottom" constant="10" id="rGE-WO-W6b"/>
+                            <constraint firstItem="Gvr-W4-35x" firstAttribute="top" secondItem="TW7-3v-Z7c" secondAttribute="top" constant="5" id="rs9-rj-1Zb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search By Date" selectedImage="calendar" catalog="system" id="u5S-DP-Aol">
+                        <imageReference key="image" image="calendar" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="datePicker" destination="YeR-jQ-dow" id="eac-lG-K1W"/>
+                        <outlet property="tblView" destination="zIY-CC-747" id="Wcb-gn-mbt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPh-3X-XEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="-493.52678571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZYH-Qk-iXx">
+            <objects>
+                <tabBarController id="kEv-xN-FMI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5jd-aY-ehK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CYk-RK-5fO" kind="relationship" relationship="viewControllers" id="w7u-Fr-xIV"/>
+                        <segue destination="QML-VT-dwU" kind="relationship" relationship="viewControllers" id="evU-rG-Ypk"/>
+                        <segue destination="xue-Gd-M78" kind="relationship" relationship="viewControllers" id="Ksj-xo-5fh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXf-hQ-TdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
